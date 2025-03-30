@@ -1,0 +1,481 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Navigation bar */
+.nav-container{
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 0 0 25px 25px;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+    background-color: #fff;
+    /* margin-top: 20px; */
+}
+
+.contain-navbar{
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.navbar .ul-1{
+    margin-right: 580px;
+}
+
+.navbar li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+.navbar ul a:hover{
+    border-bottom: 2px solid black;
+}
+/* Navigation bar */
+
+/* Surface imgae container */
+
+.img-container{ /* Relative Parent  */
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border: 5px solid; */
+}
+
+.surface-contain{ /* Absolute Child */
+    position: absolute;
+    width: 550px;
+    height: 320px;
+    background-color: #ffffff;
+    top: 10%;
+    left: 5%;
+}
+
+.surface-text{
+    margin: 50px;
+}
+
+.surface-text .btn-new, h1, p{
+    margin-bottom: 15px;
+}
+
+.btn-new{
+    padding: 5px;
+    width: 55px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: orange;
+}
+
+.btn-new a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.surface-text h1{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.surface-text p{
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.btn-1{
+    padding: 8px;
+    width: 25%;
+    border: none;
+    outline: none;
+    background-color: blue;
+}
+
+.btn-1 a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Surface imgae container */
+
+/* Slide icon */
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+
+.icon-container .slide-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container .slide-contain i{
+    margin: 0 15px;
+}
+
+.slide-contain .circle{
+    font-size: 12px;
+}
+
+/* Slide icon */
+
+/* Window icon */
+
+.window-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.window-container .window-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-icon .w-i-text i{ /* fill the icon gap push the attached line to next line */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 21px;
+}
+
+.w-i-text a{
+    color: blue;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.w-i-text a:hover{
+    border-bottom: 2px solid blue;
+}
+
+
+/* Window icon */
+
+/* Four container */
+
+.four-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four-container .four-boxes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+    margin: 70px;
+}
+
+.four-boxes .box-0{ /* Relative Parent  */
+    display: inline-block;
+    width: 24%;
+    height: 70vh;
+    margin-left: 10px;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.boxes-text{
+    padding: 10px 0 0 20px;
+}
+
+.boxes-text .a-link{
+    display: block;
+    margin-top: 8px;
+    color: blue;
+    text-decoration: none;
+}
+
+.boxes-text .a-link:hover{
+    border-bottom: 2px solid blue;
+    width: 45%;
+}
+
+.bt-1{ /* Absolute Child */
+    position: absolute;
+    top: 90%;
+}
+/* Four container */
+
+
+/* Game Container */
+
+.game-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-pass{ /* Parent Relative */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    margin: 50px 70px 70px 70px ;
+    background-color: #000;
+    position: relative;
+    border-radius: 20px 0 0 20px;
+}
+
+.game-index{
+    color: #fff;
+    margin-left: -780px;
+    margin-bottom: 50px;
+}
+
+.game-pass img{ /* Child absolute */
+    position: absolute;
+    left: 40%;
+    /* z-index: -1; */
+}
+
+.game-pass .game-title{
+    position: absolute;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 50%;
+    text-shadow: 0 8px 16px rgba(0,0,0,4);
+}
+
+.game-title .card{
+    font-size: 85px;
+    margin: 0 20px 0 0;
+}
+
+.game-title h1{
+    display: inline-block;
+    font-size: 65px;
+}
+
+/* Game Container */
+
+/*  */
+.high-light h1{
+    margin: 0 0 0 70px;
+    font-weight: 500;
+    font-size: 40px;
+}
+/*  */
+
+/* Business container */
+
+.business-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four-business{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+    margin: 20px 70px 70px 70px;
+    
+}
+
+.four-business .box-1{ /* Parent Relative */
+    width: 24%;
+    height: 70vh;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.box-1 .busi-text{
+    margin: 15px 0 0 15px;
+}
+
+.busi-text h1{
+    font-weight: 500;
+}
+
+.box-1 .bt-2{ /* Absolute child */
+    position: absolute;
+    top: 90%;
+}
+
+/* Business container */
+
+/*  */
+.subscript{
+    display: flex;
+    margin: 0 0 20px 60px;
+}
+
+.follow-micro h5{
+    display: inline;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-micro i{
+    margin: 0 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+/*  */
+
+/*  */
+.back-top{
+    float: right;
+    margin-right: 60px;
+}
+
+.back-top .btn-2{
+    padding: 8px;
+    width: 140%;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: rgb(221, 221, 221);
+}
+
+.btn-2 a{
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.arrow{
+    font-size: 20px;
+}
+
+.back-top .btn-2:hover{
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+/*  */
+
+/* Grid */
+
+.column-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    margin: 150px 0 0 0 ;
+}
+
+.columns{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: left;
+    margin: 50px;
+    gap: 50px;
+}
+
+.six-columns li{
+    list-style-type: none;
+    line-height: 35px;
+}
+
+.six-columns .bold{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.six-columns .bold:hover{
+    border-bottom: none;
+}
+
+.six-columns a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+.six-columns a:hover{
+    border-bottom: 1px solid #000;
+}
+/* Grid */
+
+
+/* Footer */
+
+footer{
+    background-color: #eee;
+    width: 100%;
+}
+
+.foot-inline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 20px 20px;
+    font-size: 12.5px;
+}
+
+.foot-inline-left{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-text-1{
+    margin: 0 0 0 20px;
+}
+
+.foot-text-1 .earth{
+    margin: 0 10px 0 0;
+    font-size: 20px;
+}
+
+.foot-inline-right a{
+    margin: 0 20px 0 0 ;
+}
+
+.foot-inline a{
+    color: #000;
+    text-decoration: none;
+}
+
+.foot-inline a:hover{
+    border-bottom: 1px solid #000;
+}
+
+/* Footer */
